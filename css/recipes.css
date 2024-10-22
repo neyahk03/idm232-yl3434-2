@@ -1,0 +1,101 @@
+@font-face {
+    font-family: nohemi-black;
+    src: url(../fonts/Nohemi-Black.otf);
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(../fonts/poppins-regular-webfont.woff),
+        url(../fonts/poppins-regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: poppins-extrabold;
+    src: url(../fonts/poppins-extrabold-webfont.woff),
+        url(../fonts/poppins-extrabold-webfont.woff2);
+}
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    --color-blue: #091057;
+    --color-orange: #ec8305;
+
+    --font-regular: poppins-regular;
+    --font-bold: nohemi-black;
+    --font-extrabold: poppins-extrabold;
+
+}
+
+body {
+    margin: 0;
+    margin-bottom: 4rem;
+    font-family: var(--font-regular);
+    
+    display: grid;
+    grid-template-columns: 4.5rem repeat(12, 1fr) 4.5rem;
+    column-gap: 2rem;
+
+
+}
+
+nav {
+    background-color: var(--color-blue);
+    padding: 1.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+    grid-column: 1/15;
+
+    a {
+        font-size: 1.25rem;
+        color: white;
+        text-decoration: none;
+        font-family: var(--font-bold);
+
+    }
+
+    a:hover {
+        color: var(--color-orange);
+    }
+}
+
+.container {
+    grid-column: 2/14;
+    margin-top: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    border: 1px solid black;
+    grid-column-end: span 4;
+    aspect-ratio: 1/1;
+}
+
+.more {
+    grid-row-start: 3;
+    grid-column: 1/15;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+}
+
+div.button{
+    padding: 0.5rem;
+    background-color: var(--color-orange);
+    color: white;
+    width: 150px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: var(--font-extrabold);
+}
