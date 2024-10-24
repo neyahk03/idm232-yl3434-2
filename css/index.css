@@ -268,7 +268,8 @@ nav {
 
 h2 {
     font-family: var(--font-bold);
-    margin-left: 15rem;
+    text-align: center;
+    margin-top: 3rem;
 }
 
 .container {
@@ -281,7 +282,7 @@ h2 {
     justify-content: center;
     gap: 2rem;
 
-    padding: 1rem;
+    padding: 3rem;
     padding-top: 0;
 }
 

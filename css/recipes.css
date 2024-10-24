@@ -180,7 +180,7 @@ nav {
     text-align: center;
 }
 
-.hero {
+.hero, .ingredients, .instruction  {
     margin: 0 auto;
     width: 70%;
     background-color: var(--color-yellow);
@@ -188,6 +188,10 @@ nav {
 
     display: grid;
     grid-template-columns: 1fr 3fr;
+
+    border-radius: 15px;
+
+    margin-bottom: 1rem;
 }
 
 .image {
@@ -197,7 +201,7 @@ nav {
 }
 
 .content {
-    padding: 2rem;
+    padding: 1rem;
     
 
     h2 {
@@ -207,5 +211,19 @@ nav {
     p {
         margin: 0;
         grid-column: 2/span 3;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero, .ingredients, .instruction {
+        grid-template-columns: 1fr 2fr;
+
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .hero, .ingredients, .instruction {
+        grid-template-columns: 1fr;
+        
     }
 }
