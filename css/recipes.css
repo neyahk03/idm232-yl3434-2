@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: nohemi-black;
     src: url(../fonts/Nohemi-Black.otf);
     font-weight: regular;
@@ -98,4 +98,114 @@ div.button{
     text-align: center;
     border-radius: 50px;
     font-family: var(--font-extrabold);
+} */
+
+@font-face {
+    font-family: nohemi-black;
+    src: url(../fonts/Nohemi-Black.otf);
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(../fonts/poppins-regular-webfont.woff),
+        url(../fonts/poppins-regular-webfont.woff2);
+}
+
+@font-face {
+    font-family: poppins-extrabold;
+    src: url(../fonts/poppins-extrabold-webfont.woff),
+        url(../fonts/poppins-extrabold-webfont.woff2);
+}
+
+
+@font-face {
+    font-family: skranji-bold;
+    src: url(../fonts/skranji-bold-webfont.woff2),
+         url(../fonts/skranji-bold-webfont.woff);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --color-blue: #091057;
+
+    --color-yellow-pale: #fefef4;
+    --color-yellow: #ffc502;
+    --color-yellow-2: #f8ba57;
+    --color-orange: #ff8400;
+
+    --font-regular: poppins-regular;
+    --font-bold: skranji-bold;
+    --font-extrabold: poppins-extrabold;
+
+}
+
+body {
+    margin: 0;
+    margin-bottom: 4rem;
+    font-family: var(--font-regular);
+    
+    /* display: grid;
+    grid-template-columns: 4.5rem repeat(12, 1fr) 4.5rem;
+    column-gap: 2rem; */
+
+    background-color: var(--color-yellow-pale);
+}
+
+.logo {
+    width: 200px;
+}
+
+h1 {
+    margin: 0;
+    font-family: skranji-bold;
+    font-size: 3rem;
+    margin-top: 0.9rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    background-color: var(--color-yellow-pale);
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.hero {
+    margin: 0 auto;
+    width: 70%;
+    background-color: var(--color-yellow);
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.image {
+    background-color: white;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.content {
+    padding: 2rem;
+    
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+        grid-column: 2/span 3;
+    }
 }

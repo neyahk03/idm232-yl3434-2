@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha</title>
     <link rel="stylesheet" href="css/index.css">
+    
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
+        <a href="index.html">
+            <img class="logo" src="images/istockphoto-1325786168-612x612.jpg" alt="">
+        </a>
+
         <a href="index.html">Home</a>
         <a href="recipes.html">Recipes</a>
         <a href="search.html">Search</a>
@@ -47,6 +52,92 @@
             cuisine 3
         </div>
 
-    </section>
+    </section> -->
+
+    <nav>
+        <h1>The</h1>
+        <a class="logo-container" href="index.html">
+            <img class="logo" src="images/istockphoto-1325786168-612x612.jpg" alt="">
+        </a>
+    </nav>
+
+    <div>
+        <p class="question">What are you feeling today?</p>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search recipes..." />
+            <button onclick="performSearch()">Search</button>
+            
+        </div>
+        <p id="error-message" style="display: none; color: red;"></p>
+    </div>
+
+    <h2>Our Recipes</h2>
+
+    <div class="container">
+        <a href="recipes.html">
+            <div class="card">
+                <div class="pic"></div>
+                <h3>Title</h3>
+                <p>description</p>
+            </div>
+        </a>
+        
+
+        <div class="card">
+            <div class="pic"></div>
+            <h3>Title</h3>
+            <p>description</p>
+        </div>
+
+        <div class="card">
+            <div class="pic"></div>
+            <h3>Title</h3>
+            <p>description</p>
+        </div>
+
+        <div class="card">
+            <div class="pic"></div>
+            <h3>Title</h3>
+            <p>description</p>
+        </div>
+
+        <div class="card">
+            <div class="pic"></div>
+            <h3>Title</h3>
+            <p>description</p>
+        </div>
+
+        <div class="card">
+            <div class="pic"></div>
+            <h3>Title</h3>
+            <p>description</p>
+        </div>
+
+        <div class="card">
+            <div class="pic"></div>
+            <h3>Title</h3>
+            <p>description</p>
+        </div>
+
+        <div class="card">
+            <div class="pic"></div>
+            <h3>Title</h3>
+            <p>description</p>
+        </div>
+
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+
+    <script src="/script/index.js"></script>
 </body>
 </html>
